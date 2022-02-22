@@ -68,6 +68,10 @@ runs:
       git config --global user.email github-actions@github.com
 
   - shell: bash
+    run: |
+      sudo rm -rf /usr/share/dotnet
+
+  - shell: bash
     id: create-archive
     run: |
       cd ${RUNNER_TEMP}
