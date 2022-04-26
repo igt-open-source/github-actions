@@ -101,7 +101,7 @@ runs:
 
   - if: inputs.gcp_enabled == 'true'
     name: Set up Cloud SDK
-    uses: google-github-actions/setup-gcloud@master
+    uses: google-github-actions/setup-gcloud@v0
     with:
       service_account_key: ${{ inputs.gcp_sa_key }}
       export_default_credentials: true
